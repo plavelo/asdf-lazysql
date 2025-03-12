@@ -40,6 +40,10 @@ download_release() {
 	architecture="$(uname -m)"
 	os="$(uname)"
 
+	if [ "$architecture" = "aarch64" ]; then
+		architecture="arm64"
+	fi
+
 	url="$GH_REPO/releases/download/v${version}/lazysql_${os}_${architecture}.tar.gz"
 
 	echo "* Downloading $TOOL_NAME release $version..."
