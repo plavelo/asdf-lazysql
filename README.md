@@ -22,8 +22,6 @@
 Plugin:
 
 ```shell
-asdf plugin add lazysql
-# or
 asdf plugin add lazysql https://github.com/plavelo/asdf-lazysql.git
 ```
 
